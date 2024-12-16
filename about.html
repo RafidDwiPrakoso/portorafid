@@ -1,0 +1,31 @@
+<div id="navbar"></div>
+<div class="container my-5" style="height: 100vh">
+    <h1 class="fs-1 text-center fw-bold text-primary mb-5">Tentang Saya</h1>
+    <div class="row bg-body rounded-4 p-5">
+        <div class="col-md-6 py-5">
+            <h1 class="fs-1">Halo saya Rafid Dwi Prakoso</h1>
+            <p class="lead text-warning fw-bold">
+                Ingin GameDev
+            </p>
+            <p>
+                Saya ingin menjadi GameDev. Saya bersekolah di SMK Wikrama Kota Bogor, kelas 11 PPLG XI-5 Di
+                SMK Wikrama Bogor saya mempelajari Banyak aplikasi game seperti unity, roblox studio, dan memiliki skill
+                di Aseprite
+            </p>
+        </div>
+        <div class="col-md-6 ps-5 ms-5" style="width: 300px; height: 300px">
+            <img src="rafid.jpg" alt="Foto saya" class="img-fluid rounded object-fit-cover"
+                style="width: 300px; height: 300px" width="300" height="300">
+        </div>
+    </div>
+</div>
+
+<script>
+    fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+        // Initialize burger menu functionality here if needed
+    })
+    .catch(error => console.error('Error loading navbar:', error));
+</script>

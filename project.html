@@ -1,0 +1,95 @@
+
+<div id="navbar"></div>
+<main class="py-5" style="min-height: 100vh; background-color: #f8f9fa;">
+    <div class="text-center text-primary mb-5">
+        <h1 class="fw-bolder">Projek</h1>
+    </div>
+    <div class="container bg-body rounded-4 p-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+                    <div class="card h-100 p-3">
+                        <img src="foto/pom-bensin.png" alt="Data Siswa" class="img-fluid rounded object-fit-cover" width="100%" height="150">
+                        <h5 class="card-title text-center mt-3">Pom Bensin</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                    <div class="card h-100 p-3">
+                        <img src="foto/kasir.png" alt="Kasir" class="img-fluid rounded object-fit-cover" width="100%" height="150">
+                        <h5 class="card-title text-center mt-3">Kasir</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                    <div class="card h-100 p-3">
+                        <img src="foto/perbandingan-angka.png" alt="Perbandingan Angka" class="img-fluid rounded object-fit-cover" width="100%" height="150">
+                        <h5 class="card-title text-center mt-3">Perbandingan Angka</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                    <div class="card h-100 p-3">
+                        <img src="foto/rental-motor.png" alt="Rental Motor" class="img-fluid rounded object-fit-cover" width="100%" height="150">
+                        <h5 class="card-title text-center mt-3">Rental Motor</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="text-center text-primary mb-5">
+            <h1 class="fw-bolder">Game</h1>
+        </div>
+    </div>
+    <div class="container bg-body rounded-4 p-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+            <div class="col">
+                    <div class="card h-100 p-3">
+                        <img src="foto/game.png" alt="Data Siswa" class="img-fluid rounded object-fit-cover" width="100%" height="150">
+                        <h5 class="card-title text-center mt-3">Unfulfilled Promises</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+
+    .card img {
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+        transform: scale(1.2);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        color: #007bff;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        color: #343a40;
+    }
+</style>
+
+<script>
+    fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+        // Initialize burger menu functionality here if needed
+    })
+    .catch(error => console.error('Error loading navbar:', error));
+</script>
